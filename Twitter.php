@@ -13,7 +13,7 @@ class Twitter
     const DEBUG = false;
 
     // url for the twitter-api
-    const API_URL = 'https://api.twitter.com/1.1';
+    const API_URL = 'https://api.twitter.com/1';
     const SECURE_API_URL = 'https://api.twitter.com';
 
     // port for the twitter-api

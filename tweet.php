@@ -9,10 +9,11 @@ $twitter->setOAuthToken($oAuthToken);
 $twitter->setOAuthTokenSecret($oAuthTokenSecret);
 // Verificar credenciales
 $twitter->accountVerifyCredentials();
-// Mensaje
+// Mensaje 
+//$twitter->searchTweets("@recuerdaentrada", null, null, null, null, '1');
 $lastTweet = file_get_contents("http://api.twitter.com/1/statuses/user_timeline.json?screen_name=recuerdaentrada&count=1");
 $data = json_decode($lastTweet);
-$texto = $data[0]->text;
+$texto = $data[0]->text; 
 $texto = utf8_decode($texto);
 echo $texto;
 
